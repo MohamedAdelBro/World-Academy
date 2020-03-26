@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".Fragments.homeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:id="@+id/bar"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/bar_home"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="casual"
+                        android:padding="5dp"
+                        android:text="@string/app_name"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+
+                        <!--                    <RelativeLayout-->
+                        <!--                        android:id="@+id/Navegation"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_centerInParent="true">-->
+
+                        <!--                        <ImageView-->
+                        <!--                            android:id="@+id/navegation"-->
+                        <!--                            android:layout_width="40dp"-->
+                        <!--                            android:layout_height="30dp"-->
+                        <!--                            android:src="@drawable/chat" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:id="@+id/number_chat"-->
+
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_below="@id/navegation"-->
+                        <!--                            android:layout_marginTop="-9dp"-->
+                        <!--                            android:background="@drawable/back_for_number"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:padding="3dp"-->
+                        <!--                            android:text="12"-->
+                        <!--                            android:textColor="#FF0303"-->
+                        <!--                            android:textSize="10dp"-->
+                        <!--                            android:textStyle="bold"-->
+
+                        <!--                            />-->
+                        <!--                    </RelativeLayout>-->
+
+                        <RelativeLayout
+                            android:id="@+id/notification"
+                            android:layout_width="38dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="15dp">
+
+                            <ImageView
+                                android:id="@+id/chat"
+                                android:layout_width="40dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/notificatio_icon_white" />
+
+                            <TextView
+                                android:id="@+id/number_navegation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/chat"
+                                android:layout_marginTop="-9dp"
+                                android:background="@drawable/back_for_number"
+                                android:gravity="center"
+                                android:padding="3dp"
+                                android:text="12"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <!--********************************************************************************-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                tools:ignore="MissingConstraints">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/RecHori"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" />
+
+
+            </RelativeLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RecVer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/Facebook"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/face" />
+
+                <ImageView
+                    android:id="@+id/Instgram"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/instgram" />
+
+                <ImageView
+                    android:id="@+id/SnapShat"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/snap" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

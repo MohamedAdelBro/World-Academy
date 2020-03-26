@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "453645927541",
+    "firebase_url": "https://world-academy-for-courses.firebaseio.com",
+    "project_id": "world-academy-for-courses",
+    "storage_bucket": "world-academy-for-courses.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:453645927541:android:67bfde9dba51d88302a43c",
+        "android_client_info": {
+          "package_name": "com.example.worldacademy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "453645927541-ih7f4rn3fm163i89d5f2eg665l2eer83.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi-6nI0dCamh7jrxh6_KRgDm6LMy4SIeU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "453645927541-ih7f4rn3fm163i89d5f2eg665l2eer83.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
